@@ -14,16 +14,7 @@ In individual folders you will find the original KiCad project work plus the pan
 The latter can be used to order your own PCB's from a fab shop of your choice.
 Included are sample sketches for testing, along with detailed build instructions (in Excel)
 
-
-# Panel Version
-The working PCB is sized 50mmm x 100 mm which means it can easily be panelized in sets of two.
-There is a seperate folder containing the Panelized version of the Gerbers.
-Note that all EDITS must be done in the 'single PCB version' and then be repanelized. 
-Creating a new panel version is done by running a script.
-It panelizes the single version into an array you specify (two rows, one collumn).  
-
 ## Status of MAXDuino development 
-
 ### Rev 1.1 The current 'Production version' with the following fixes / enhancements:
 <Li> (Schematic + PCB) Fix DCC decoder circuit.</Li>
 <Li> (Schematic + PCB) Remove R3 - not required as pullup is included in U2</Li>
@@ -49,8 +40,14 @@ It panelizes the single version into an array you specify (two rows, one collumn
 <Li> (Docs) Revise build instructions (esp the new 5VDC PS option)</Li>
 <Li> Note: DCC decoding failed to work.</Li>
 
-
 ### Rev 0.1 Early Development 
 <Li> the first PCB manufactured.</Li> 
 <Li> Mainly used as a platform for code development and early issue resolution.</Li>
 <Li> Used to prepare first pass build documentation</Li>
+
+# The Panel Version
+The working PCB is sized 50mmm x 100 mm which means it can easily be panelized in sets of two.
+There is a seperate folder containing the Panelized version of the Gerbers.
+Note that all EDITS must be done in the 'single PCB version' and then be repanelized. 
+Creating a new panel version is done by running a script.
+It panelizes the single version into an array you specify (two rows, one collumn).  
