@@ -26,7 +26,7 @@ Included are sample sketches for testing, along with detailed build instructions
 <Li> (PCB Only) Improved stencil markers for DCC isolation</Li>
 <Li> (Docs) Revise build instructions (esp the DCC decoding section)</Li>
 <Li> (Docs) Added configurator to build instructions - decide what features you want and BoM updates accordingly</Li>
-<Li> (Docs) Added test sketch details. For each test wow to set it up and with what hardware to repeat the test case.</Li>
+<Li> (Docs) Added test sketch details. For each test what hardware is needed and how to set it up in order to repeat the test case.</Li>
 
 ### Rev 1.0 A 'Pre production version' with the following fixes / enhancements:
 <Li> (Schematic + PCB) Remove unnecessary jumper pins</Li>
