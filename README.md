@@ -1,21 +1,30 @@
-# MAXDuino KiCad files
+# MAXDuino
+Is a small PCB carrier board that acts as a host for an Arduino NANO to plug into.
+The PCB provides a multitude of supporting features for the NANO and is targeted for
+use as a model railway animation tool (see feature list below)
+Because of its flexibility it can be used in many different scenarios.
+
+## MAXDuino KiCad files
 These are the KiCad files and supporting documentation for the MaxDuino PCB.
+
 ## Key Features
 <Li>Arduino Nano R3
-<Li>MAX485 chip and two sets of terminals for daisy chaining
-<Li>on board NeoPixel
-<Li>Robust on board DC power supply
+<Li>MAX485 chip and two sets of terminals for RA485 daisy chaining
+<Li>on board NeoPixel for flexible diagnostic use
+<Li>Robust on board DC power supply (Input can be any one of 5VDC, 12 VDC, DCC, Low voltage AC)
 <Li>DFRobot MP3 player with SD card and speaker terminals
 <Li>Lots of 3 pin headers and an I2C header
 <Li>Opto Isolator for decoding DCC packets (Since Rev 1.1)
 
-# Notes
+## Notes
 In individual folders you will find the original KiCad project work plus the panelized gerbers.
 The latter can be used to order your own PCB's from a fab shop of your choice.
 Included are sample sketches for testing, along with detailed build instructions (in Excel)
 
 ## Status of MAXDuino development 
-### Rev 1.1 The current 'Production version' with the following fixes / enhancements:
+### Rev 1.1 Is The current 'Production version'
+
+### Rev 1.1 History of Fixes fixes / enhancements:
 <Li> (Schematic + PCB) Fix DCC decoder circuit.</Li>
 <Li> (Schematic + PCB) Remove R3 - not required as pullup is included in U2</Li>
 <Li> (Schematic + PCB) Change R4 from 4K7 to 470R to improve transient performance</Li>
