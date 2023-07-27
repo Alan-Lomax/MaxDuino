@@ -9,7 +9,7 @@ These are the KiCad files and supporting documentation for the MaxDuino PCB.
 
 ## Key Features
 <Li>Arduino Nano R3
-<Li>MAX485 chip and two sets of terminals for RA485 daisy chaining
+<Li>MAX485 chip and two sets of terminals for RS485 daisy chaining
 <Li>on board NeoPixel for flexible diagnostic use
 <Li>Robust on board DC power supply (Input can be any one of 5VDC, 12 VDC, DCC, Low voltage AC)
 <Li>DFRobot MP3 player with SD card and speaker terminals
