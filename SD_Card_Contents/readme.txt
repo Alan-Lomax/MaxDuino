@@ -1,9 +1,3 @@
-I have collected many notes and useful stuff into a single folder for putting onto an SD card.
-Content might include images of schematics, assembly instructions, and sample sketches for testing various MaxDuino functions.
-(Note these may depend on certain libraries being avaialble in your Arduino IDE. You can download them with the library manager.)
-
-
-
 =============
 Sound Effects
 =============
