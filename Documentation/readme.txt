@@ -1,4 +1,2 @@
-I have collected many notes and generally useful stuff into this single documentation folder.
-It is not a curated list - but rather an ad-hoc collection
-It is all relevant to the MaxDuino.
-
+Notes and generally useful stuff relevant to the MaxDuino
+This material is not essential to use the MaxDuino
