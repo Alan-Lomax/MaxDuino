@@ -22,7 +22,13 @@ The latter can be used to order your own PCB's from a fab shop of your choice.
 Included are sample sketches for testing, along with detailed build instructions (in Excel)
 
 ## Status of MAXDuino development 
-### Rev 1.1 Is The current 'Production version'
+### Rev 1.2 Is The current 'Production version' 
+(example sketch for MAX485 will need updating when my new boards arrive)
+
+### Rev 1.2 Minor Fixes and enhancements:
+<Li> (Schematic + PCB) Used seperate pins for DE and RE on RS485 communication chip to enable ICSP.</Li>
+<Li> (Schematic + PCB) Dasiy chained on board NeoPixel to the external pin header so thta both can be used without a duplication on index 0 of fastled array.</Li>
+<Li> (Schematic + PCB) Added bypass to on board NeoPixel so that D4 could be connected directly to header pins.</Li>
 
 ### Rev 1.1 History of Fixes fixes / enhancements:
 <Li> (Schematic + PCB) Fix DCC decoder circuit.</Li>
