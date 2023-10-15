@@ -9,12 +9,12 @@ These are the KiCad files and supporting documentation for the MaxDuino PCB.
 
 ## Key Features
 <Li>Arduino Nano R3
-<Li>MAX485 chip and two sets of terminals for RS485 daisy chaining
+<Li>MAX485 chip and two sets of terminals for RS485 daisy chaining (Seperate DE/RE pins)
 <Li>on board NeoPixel for flexible diagnostic use
-<Li>Robust on board DC power supply (Input can be any one of 5VDC, 12 VDC, DCC, Low voltage AC)
+<Li>Robust on board DC power supply (Input can be any one of 5V DC, 9-15V DC/AC, or DCC)
 <Li>DFRobot MP3 player with SD card and speaker terminals
 <Li>Lots of 3 pin headers and an I2C header
-<Li>Opto Isolator for decoding DCC packets (Since Rev 1.1)
+<Li>Opto Isolator for decoding DCC packets
 
 ## Notes
 In individual folders you will find the original KiCad project work plus the panelized gerbers.
@@ -22,14 +22,22 @@ The latter can be used to order your own PCB's from a fab shop of your choice.
 Included are sample sketches for testing, along with detailed build instructions (in Excel)
 
 ## Status of MAXDuino development 
-### Rev 1.2 Is The latest 'version' but it has broken "DCC decoding" (wrong pin was assigned) 
-If DCC decoding is planned then I reccomend using version 1.1.
+### Rev 1.4 Is The latest 
+<Li> This version is electrically the same as Version 1.3)</Li>
+<Li> <B>All functional testing passed successfully.</B></Li>
+<Li> Minor stencilling improvements and corrections have been addressed (from version 1.3)</Li>
+<Li> Updated test sketches provided. Reflects new pin assignments, simplified and compartmentalized the test scope.</Li>
+
+### Rev 1.3 
+<Li> (Schematic + PCB) Moved RE pin to pin D5 and returned DCC decoding to D3.</Li>
+<Li> All testing has passed using the test sketches provided.</Li>
+<Li> Prepared final draft of MERG article on this basis - during proofing minor stencil layer issues were noted.</Li>
 
 ### Rev 1.2 Minor Fixes and enhancements:
 <Li> (Schematic + PCB) Used seperate pins for DE and RE on RS485 communication chip to enable ICSP.</Li>
 <Li> (Schematic + PCB) Dasiy chained on board NeoPixel to the external pin header so thta both can be used without a duplication on index 0 of fastled array.</Li>
 <Li> (Schematic + PCB) Added bypass to on board NeoPixel so that D4 could be connected directly to header pins.</Li>
-<Li> (Schematic + PCB) <B>Regression</B> - Moving DE/RE pin assignments caused DCC decodiong to be assigned a pin that does not support the necessary interrupts.</Li>
+<Li> (Schematic + PCB) <B>Regression</B> - Moving DE/RE pin assignments caused DCC decoding to be assigned a pin that does not support the necessary interrupts.</Li>
 
 
 ### Rev 1.1 History of Fixes fixes / enhancements:
