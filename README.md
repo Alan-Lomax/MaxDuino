@@ -1,14 +1,14 @@
-# MAXDuino
+# MaxDuino
 Is a small PCB carrier board that acts as a host for an Arduino NANO to plug into.
 The PCB provides a multitude of supporting features for the NANO and is targeted for
 use as a model railway animation tool (see feature list below)
 Because of its flexibility it can be used in many different scenarios.
 
-## MAXDuino KiCad files
+## MaxDuino KiCad files
 These are the KiCad files and supporting documentation for the MaxDuino PCB.
 
 ## Key Features
-<Li>Arduino Nano R3
+<Li>Arduino Nano R3 is fully utilized.
 <Li>MAX485 chip and two sets of terminals for RS485 daisy chaining (Seperate DE/RE pins)
 <Li>on board NeoPixel for flexible diagnostic use
 <Li>Robust on board DC power supply (Input can be any one of 5V DC, 9-15V DC/AC, or DCC)
@@ -21,8 +21,8 @@ In individual folders you will find the original KiCad project work plus the pan
 The latter can be used to order your own PCB's from a fab shop of your choice.
 Included are sample sketches for testing, along with detailed build instructions (in Excel)
 
-## Status of MAXDuino development 
-### Rev 1.4 Is The latest 
+## Status of MaxDuino development 
+### Rev 1.4 Is The Latest 
 <Li> This version is electrically the same as Version 1.3)</Li>
 <Li> <B>All functional testing passed successfully.</B></Li>
 <Li> Minor stencilling improvements and corrections have been addressed (from version 1.3)</Li>
@@ -53,7 +53,7 @@ Included are sample sketches for testing, along with detailed build instructions
 <Li> (Docs) Added configurator to build instructions - decide what features you want and BoM updates accordingly</Li>
 <Li> (Docs) Added test sketch details. For each test what hardware is needed and how to set it up in order to repeat the test case.</Li>
 
-### Rev 1.0 A 'Pre production version' with the following fixes / enhancements:
+### Rev 1.0 'Pre production version' with the following fixes / enhancements:
 <Li> (Schematic + PCB) Remove unnecessary jumper pins</Li>
 <Li> (Schematic + PCB) Remove C6 (not needed)</Li>
 <Li> (Schematic + PCB) Add terminals for 5VDC output or direct injection of 5VDC</Li>
@@ -76,4 +76,4 @@ The working PCB is sized 50mmm x 100 mm which means it can easily be panelized i
 There is a seperate folder containing the Panelized version of the Gerbers.
 Note that all EDITS must be done in the 'single PCB version' and then be repanelized. 
 Creating a new panel version is done by running a script.
-It panelizes the single version into an array you specify (two rows, one collumn).  
+It panelizes the single version into an array you specify (Normally two rows, one collumn).  
