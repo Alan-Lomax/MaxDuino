@@ -1,19 +1,21 @@
 # MaxDuino
-Is a small PCB carrier board that acts as a host for an Arduino NANO to plug into.
-The PCB provides a multitude of supporting features for the NANO and is targeted for
-use as a model railway animation tool (see feature list below)
+Is a small PCB carrier board that acts as a host for an Arduino NANO.
+The PCB provides a multitude of supporting features for the NANO.
+It is targeted for use as a model railway animation tool (see feature list)
 Because of its flexibility it can be used in many different scenarios.
 
 ## Key Features
 <Li>Arduino Nano R3 is fully utilized.
-<Li>MAX485 chip and two sets of terminals for RS485 daisy chaining (Seperate DE/RE pins)
-<Li>on board NeoPixel for flexible diagnostic use
-<Li>Robust on board DC power supply (Input can be any one of 5V DC, 9-15V DC/AC, or DCC)
+<Li>On board NeoPixel for flexible diagnostic use and status reporting.
+<Li>Robust on board DC power supply (5V DC, 9-15V DC/AC, or DCC)
 <Li>DFRobot MP3 player with SD card and speaker terminals
 <Li>Lots of 3 pin headers and an I2C header
 <Li>Opto Isolator for decoding DCC packets
-<Li>As from R1.5 a RJ45 socket is used to connect 12VDC power and RS485 signals between boards
-<Li>Included are sample sketches for testing, along with detailed build instructions (in Excel)
+<Li>A RJ45 jack is used to connect 12VDC power and RS485 signals between boards
+<li>Two sets of jacks are provided for easy daisy chaining
+<Li>The MAX485 chip has seperate DE/RE pins allowing ICSP of the Arduino. 
+<Li>Sample sketches for testing, and to accelerate your own development.
+<li>Detailed build instructions are provided in Excel.
 
 ## Status of MaxDuino development 
 ### Rev 1.5 Is The Latest 
