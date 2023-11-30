@@ -4,9 +4,6 @@ The PCB provides a multitude of supporting features for the NANO and is targeted
 use as a model railway animation tool (see feature list below)
 Because of its flexibility it can be used in many different scenarios.
 
-## MaxDuino KiCad files
-These are the KiCad files and supporting documentation for the MaxDuino PCB.
-
 ## Key Features
 <Li>Arduino Nano R3 is fully utilized.
 <Li>MAX485 chip and two sets of terminals for RS485 daisy chaining (Seperate DE/RE pins)
@@ -15,65 +12,51 @@ These are the KiCad files and supporting documentation for the MaxDuino PCB.
 <Li>DFRobot MP3 player with SD card and speaker terminals
 <Li>Lots of 3 pin headers and an I2C header
 <Li>Opto Isolator for decoding DCC packets
-
-## Notes
-In individual folders you will find the original KiCad project work plus the panelized gerbers.
-The latter can be used to order your own PCB's from a fab shop of your choice.
-Included are sample sketches for testing, along with detailed build instructions (in Excel)
+<Li>As from R1.5 a RJ45 socket is used to connect 12VDC power and RS485 signals between boards
+<Li>Included are sample sketches for testing, along with detailed build instructions (in Excel)
 
 ## Status of MaxDuino development 
-### Rev 1.4 Is The Latest 
+### Rev 1.5 Is The Latest 
+<Li>This version is electrically the same as Version 1.4) (no major functionality difference)</Li>
+<li>The previous screw terminals for RS485 have been replaced with RJ45 jacks.
+<li>Of the 8 pins available two are used for RS485, and 4 are used for 12VDC (doubled up). The remaining two are for future use.
+<Li>The power supply section received a major redesign - replacing a round bridge diode with 4 discrete diodes
+<Li>Furthermore 3 additional diodes were used to drop the voltage into the L7805 voltage regulator
+<Li>A single diode has been used to prevent backfeeding power onto the network cable 
+<li>The previous screw terminals for a speaker are replaced with PCB holes for mounting a 2 pin header or direct soldering.
+<Li><B>All testing passed successfully.</B> 
+<Li>This includes remote power and RS485 communications via a single standard network patch cable</Li>
+
+## Known Issues
+<Li>The power supply redesign moved the parts around such that the heat sink does not fit without modification. 
+This is offset however as the additional diodes mean heat dissipation is not as much a concern. 
+<Li>On the 5 Volt screw terminals the stencilling for plus and minus was inadvertently ommitted. 
+
+### Rev 1.4
 <Li> This version is electrically the same as Version 1.3)</Li>
-<Li> <B>All functional testing passed successfully.</B></Li>
 <Li> Minor stencilling improvements and corrections have been addressed (from version 1.3)</Li>
+<Li> <B>All functional testing passed successfully.</B></Li>
 <Li> Updated test sketches provided. Reflects new pin assignments, simplified and compartmentalized the test scope.</Li>
 
-### Rev 1.3 
-<Li> (Schematic + PCB) Moved RE pin to pin D5 and returned DCC decoding to D3.</Li>
-<Li> All testing has passed using the test sketches provided.</Li>
-<Li> Prepared final draft of MERG article on this basis - during proofing minor stencil layer issues were noted.</Li>
+### Rev 1.3 and Older Have been removed from GitHub
 
-### Rev 1.2 Minor Fixes and enhancements:
-<Li> (Schematic + PCB) Used seperate pins for DE and RE on RS485 communication chip to enable ICSP.</Li>
-<Li> (Schematic + PCB) Dasiy chained on board NeoPixel to the external pin header so thta both can be used without a duplication on index 0 of fastled array.</Li>
-<Li> (Schematic + PCB) Added bypass to on board NeoPixel so that D4 could be connected directly to header pins.</Li>
-<Li> (Schematic + PCB) <B>Regression</B> - Moving DE/RE pin assignments caused DCC decoding to be assigned a pin that does not support the necessary interrupts.</Li>
-
-
-### Rev 1.1 History of Fixes fixes / enhancements:
-<Li> (Schematic + PCB) Fix DCC decoder circuit.</Li>
-<Li> (Schematic + PCB) Remove R3 - not required as pullup is included in U2</Li>
-<Li> (Schematic + PCB) Change R4 from 4K7 to 470R to improve transient performance</Li>
-<Li> (Schematic + PCB) Change R2 from 1K to 2K2 to reduce DCC current draw through optoisolator.</Li>
-<Li> (Schematic + PCB) Change C5 from 220pF to .001uF  to improve transient performance</Li>
-<Li> (Schematic + PCB) Add C8 0.1 uF as decoupling capacitor on U2</Li>
-<Li> (PCB Only) Improved stencil markers for NeoPixel</Li>
-<Li> (PCB Only) Improved stencil markers for DCC isolation</Li>
-<Li> (Docs) Revise build instructions (esp the DCC decoding section)</Li>
-<Li> (Docs) Added configurator to build instructions - decide what features you want and BoM updates accordingly</Li>
-<Li> (Docs) Added test sketch details. For each test what hardware is needed and how to set it up in order to repeat the test case.</Li>
-
-### Rev 1.0 'Pre production version' with the following fixes / enhancements:
-<Li> (Schematic + PCB) Remove unnecessary jumper pins</Li>
-<Li> (Schematic + PCB) Remove C6 (not needed)</Li>
-<Li> (Schematic + PCB) Add terminals for 5VDC output or direct injection of 5VDC</Li>
-<Li> (Schematic + PCB) Modify 3 pin headers construct from groups of 4 in different colours</Li>
-<Li> (Schematic + PCB) Reorder the I2C pins to match OLED display order</Li>
-<LI> (PCB Only) Make Power supply traces consistent (some were thinner than others)</Li>
-<LI> (PCB Only) Move Vin_En jumper closer to the Arduino Vin pin</Li>
-<Li> (PCB Only) Reduce footprint for electrolytic capacitors</Li>
-<Li> (PCB Only) Improved stencil markers for 5VDC</Li>
-<Li> (Docs) Revise build instructions (esp the new 5VDC PS option)</Li>
-<Li> Note: DCC decoding failed to work.</Li>
-
-### Rev 0.1 Early Development 
-<Li> the first PCB manufactured.</Li> 
-<Li> Mainly used as a platform for code development and early issue resolution.</Li>
-<Li> Used to prepare first pass build documentation</Li>
+## MaxDuino KiCad files including GERBERS.
+The KiCad files are essentially 'source code' and include the sc schematic and the Printed Circuit Board.
+The Gerber files are the 'compiled version' and are whjat gets submitted for manufacture at the fabrication facility of your choice.
 
 # The Panel Version
-The working PCB is sized 50mmm x 100 mm which means it can easily be panelized in sets of two.
 There is a seperate folder containing the Panelized version of the Gerbers.
-Note that all EDITS must be done in the 'single PCB version' and then be repanelized. 
-Creating a new panel version is done by running a script.
-It panelizes the single version into an array you specify (Normally two rows, one collumn).  
+
+The MaxDuino PCB is sized 50mmm x 100 mm which means it can easily be panelized in sets of two.
+This makes the panelized Maxduino fit on a single 100mm x 100mm PCB which is the normal 'minimum size' for billing.
+The short version - you get twice as many MaxDuinos at no extra cost.
+
+# Be Aware
+Normally all EDITS should be done in the 'single PCB version' and then it be repanelized.
+To repanleize you start a new Kicad project (no contents) and run the add in to panelize.
+You will specfiy which other KiCad design you want to panelize and the number of rows (2) and collumns (1)
+The only manual step needed is to add a horizontal line on the edge cut layer.
+This will be a 'Vee-Cut' and allows separating the two PCBs easily without cutting, sawing or scoring.
+
+
+
