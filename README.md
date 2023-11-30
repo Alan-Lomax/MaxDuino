@@ -19,18 +19,20 @@ Because of its flexibility it can be used in many different scenarios.
 
 ## Status of MaxDuino development 
 ### Rev 1.5 Is The Latest 
-<Li>This version is electrically the same as Version 1.4) (no major functionality difference)</Li>
+<Li>Electrically the same as V1.4) (no major functionality difference)
 <li>The previous screw terminals for RS485 have been replaced with RJ45 jacks.
-<li>Of the 8 pins available two are used for RS485, and 4 are used for 12VDC (doubled up). The remaining two are for future use.
-<Li>The power supply section received a major redesign - replacing a round bridge diode with 4 discrete diodes
-<Li>Furthermore 3 additional diodes were used to drop the voltage into the L7805 voltage regulator
-<Li>A single diode has been used to prevent backfeeding power onto the network cable 
-<li>The previous screw terminals for a speaker are replaced with PCB holes for mounting a 2 pin header or direct soldering.
-<Li><B>All testing passed successfully.</B> 
-<Li>This includes remote power and RS485 communications via a single standard network patch cable</Li>
+<li>Of the 8 pins available two are used for RS485, and 4 are used for 12VDC.
+<li>The remaining two pins are reserved for future use.
+<Li>The power supply section received a major redesign.
+<li>The round bridge diode is replaced with 4 discrete diodes.
+<Li>3 additional diodes were used to drop the voltage into the L7805 regulator
+<Li>A diode has been used to prevent backfeeding power onto the network cable 
+<li>Screw terminals for a speaker are deleted. (Now a pair of 2 pin headers)
+<Li>Remote power and RS485 coms tested via a standard network patch cable</Li>
+<Li><B>The full test suite has been run and all testing passed successfully.</B>
 
 ## Known Issues
-<Li>The power supply redesign moved the parts around such that the heat sink does not fit without modification. 
+<Li>The power supply redesign moved the parts around such that now the heat sink does not fit without modification. 
 This is offset however as the additional diodes mean heat dissipation is not as much a concern. 
 <Li>On the 5 Volt screw terminals the stencilling for plus and minus was inadvertently ommitted. 
 
