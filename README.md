@@ -38,35 +38,38 @@ as the additional diodes mean heat dissipation is not as much a concern.
 <Li>The stencilling for plus and minus was inadvertently ommitted on 5Vdc terms. 
 
 ### Rev 1.4
-<Li> This version is electrically the same as Version 1.3)</Li>
-<Li> Minor stencilling improvements and corrections have been addressed (from version 1.3)</Li>
+<Li> This version is electrically the same as Version 1.3) however the 
+<Li>silkscreen errors have been addressed</Li>
 <Li> <B>All functional testing passed successfully.</B></Li>
-<Li> Updated test sketches provided. Reflects new pin assignments, simplified and compartmentalized the test scope.</Li>
+<Li> Updated test sketches provided. Test code reflects new pin assignments,
+<Li> Sketches are simplified and compartmentalized as to their the test scope.
 
-### Rev 1.3 and Older Have been removed from GitHub
+### Rev 1.3 and Older Have been removed from GitHub (Files are in the archive)
 
 ## MaxDuino KiCad files including GERBERS.
 The KiCad files are essentially 'source code' and include:
 <Li>the schematic and
 <Li>the Printed Circuit Board art work
+Te Kicad software checks for consistency between these two.
 
-The Gerber files are the 'compiled version' and are what gets submitted for
-manufacture at the fabrication facility of your choice.
+The Gerber files can e thought of as the 'compiled version'. The Gerbers
+are seperate files, one for each step in the manufacturing process of a PCB.
+The Gerbers are normally saved as a ZIP file and the Zip file is what gets
+submitted for manufacture at the fabrication facility of your choice.
 
 # The Panel Version
-There is a seperate folder containing the Panelized version of the Gerbers.
-
 The MaxDuino PCB is sized 50mmm x 100 mm which means it can easily be panelized
 in sets of two. This makes the panelized Maxduino fit on a single 100mm x 100mm 
 PCB which is the normal 'minimum size' for billing. The short version of this 
 is you get twice as many MaxDuinos at no extra cost.
 
+There is a seperate folder containing the Panelized version of the Gerbers.
+
 # Be Aware
 Normally all EDITS should be done to the 'single PCB' and then it be repanelized
-To repanelize you start a new Kicad project (no contents) and run an add in to panelize.
-You will specfiy which other KiCad design you want to panelize and the number of rows (2) and collumns (1)
+To repanelize you start a new Kicad project (one with no contents)
+and run a 'plug in' to panelize things. You will specfiy which other 
+file has the PCB layout you want to panelize. You also set the number of
+rows (2) and collumns (1)
 The only manual step needed is to add a horizontal line on the edge cut layer.
-This will be a 'Vee-Cut' and allows separating the two PCBs easily without cutting, sawing or scoring.
-
-
-
+This will be a 'Vee-Cut' and allows separating the two PCBs easily.
