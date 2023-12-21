@@ -18,7 +18,12 @@ Because of its flexibility it can be used in many different scenarios.
 <li>Detailed build instructions are provided in Excel.
 
 ## Status of MaxDuino development 
-### Rev 1.5 Is The Latest 
+### Rev 1.6 Is The Latest RJ45 Version 
+<Li>Same as V1.5) (no major functionality difference) except
+<Li>Improved spacing around votage regulator for heatsink mounting
+<Li>Added stencilling around 5 volt terminals indicating polarity
+<li>Brought the preamp pins on the Mp3 player out to pads (some people have external amps)
+### Rev 1.5 (removed - use R1.6 instead)
 <Li>Electrically the same as V1.4) (no major functionality difference)
 <li>The previous screw terminals for RS485 have been replaced with RJ45 jacks.
 <li>Of the 8 pins available two are used for RS485, and 4 are used for 12VDC.
@@ -37,12 +42,12 @@ does not fit without modification (bending of 2 fins). This is offset however
 as the additional diodes mean heat dissipation is not as much a concern. 
 <Li>The stencilling for plus and minus was inadvertently ommitted on 5Vdc terms. 
 
-### Rev 1.4
-<Li> This version is electrically the same as Version 1.3) however the 
+### Rev 1.4 Is The Latest Version using screw terminals
+<Li>This version is electrically the same as Version 1.3) however the 
 <Li>silkscreen errors have been addressed</Li>
-<Li> <B>All functional testing passed successfully.</B></Li>
-<Li> Updated test sketches provided. Test code reflects new pin assignments,
-<Li> Sketches are simplified and compartmentalized as to their the test scope.
+<Li><B>All functional testing passed successfully.</B></Li>
+<Li>Updated test sketches provided. Test code reflects new pin assignments,
+<Li>Sketches are simplified and compartmentalized as to their the test scope.
 
 ### Rev 1.3 and Older Have been removed from GitHub (Files are in the archive)
 
