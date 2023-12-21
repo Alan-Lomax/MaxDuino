@@ -23,6 +23,7 @@ Because of its flexibility it can be used in many different scenarios.
 <Li>Improved spacing around votage regulator for heatsink mounting
 <Li>Added stencilling around 5 volt terminals indicating polarity
 <li>Brought the preamp pins on the Mp3 player out to pads (some people have external amps)
+
 ### Rev 1.5 (removed - use R1.6 instead)
 <Li>Electrically the same as V1.4) (no major functionality difference)
 <li>The previous screw terminals for RS485 have been replaced with RJ45 jacks.
