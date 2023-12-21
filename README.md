@@ -5,8 +5,8 @@ It is targeted for use as a model railway animation tool (see feature list)
 Because of its flexibility it can be used in many different scenarios.
 
 <B>There are two current versions according to needs:</B>
-R1.6 uses RJ-45 jacks (network patch cords) for power and communications
-R1.4 uses screw terminals for simple wire connections
+<Li>R1.6 uses RJ-45 jacks (network patch cords) for power and communications
+<Li>R1.4 uses screw terminals for simple wire connections
 
 ## Key Features
 <Li>Arduino Nano R3 is fully utilized.
@@ -23,23 +23,18 @@ R1.4 uses screw terminals for simple wire connections
 
 ## Status of MaxDuino development 
 ### Rev 1.6 Is The Latest RJ45 Version 
-<Li>Same as V1.5 with no functionality differences
-<Li>Minor improvements are: 
-    <Li>Improved spacing around votage regulator for heatsink mounting
-    <Li>Added stencilling around 5 volt terminals indicating polarity
-    <Li>Brought the preamp pins on the Mp3 player out to pads (some people uae external amps)
-
-### Rev 1.5 (removed - use R1.6 instead)
-<Li>Electrically the same as V1.4) (no major functionality difference)
+<Li>No functionality differences vs R1.5.  Minor improvements are: 
+<Li>Improved spacing around votage regulator for heatsink mounting
+<Li>Added stencilling around 5 volt terminals indicating polarity
+<Li>Brought the preamp pins on the Mp3 player out to pads (some people uae external amps)
+As per prior version
 <Li>The previous screw terminals for RS485 have been replaced with RJ45 jacks.
-<Li>Of the 8 pins available two are used for RS485, and 4 are used for 12VDC.
-<Li>The remaining two pins are reserved for future use.
 <Li>The power supply section received a major redesign.
 <li>The round bridge diode is replaced with 4 discrete diodes.
 <Li>3 additional diodes are used to drop the voltage into the L7805 regulator
 <Li>A diode has been used to prevent backfeeding power onto the network cable 
 Substitute a jumper where feeding power out is the desired behaviour)
-<li>Screw terminals for a speaker are deleted. (Now a pair of 2 pin headers)
+<li>Screw terminals for a speaker are deleted. (Now using 2 pin headers)
 <Li>Remote power and RS485 coms tested via a standard network patch cable</Li>
 <Li><B>The full test suite has been run and all testing passed successfully.</B>
 
