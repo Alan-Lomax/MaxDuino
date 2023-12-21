@@ -38,10 +38,7 @@ Because of its flexibility it can be used in many different scenarios.
 <Li><B>The full test suite has been run and all testing passed successfully.</B>
 
 ## Known Issues
-<Li>The power supply redesign moved parts around such that the TO-220 heat sink
-does not fit without modification (bending of 2 fins). This is offset however
-as the additional diodes mean heat dissipation is not as much a concern. 
-<Li>The stencilling for plus and minus was inadvertently ommitted on 5Vdc terms. 
+<Li>None
 
 ### Rev 1.4 Is The Latest Version using screw terminals
 <Li>This version is electrically the same as Version 1.3) however the 
