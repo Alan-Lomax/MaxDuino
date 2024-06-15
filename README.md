@@ -15,7 +15,7 @@ Because of its flexibility it can be used in many different scenarios.
 <Li>DFRobot MP3 player with SD card and speaker terminals
 <Li>Lots of 3 pin headers and an I2C header
 <Li>Opto Isolator for decoding DCC packets
-<Li>A RJ45 jack is used to connect 12VDC power and RS485 signals between boards
+<Li>A RJ45 jack is used to connect 12VDC power and RS485 signals between R1.6 boards
 <li>Two sets of jacks are provided for easy daisy chaining
 <Li>The MAX485 chip has seperate DE/RE pins allowing ICSP of the Arduino. 
 <Li>Sample sketches for testing, and to accelerate your own development.
@@ -27,13 +27,14 @@ Because of its flexibility it can be used in many different scenarios.
 <Li>Improved spacing around votage regulator for heatsink mounting
 <Li>Added stencilling around 5 volt terminals indicating polarity
 <Li>Brought the preamp pins on the Mp3 player out to pads (some people uae external amps)
-As per prior version
+
+Since the R1.4 version
 <Li>The previous screw terminals for RS485 have been replaced with RJ45 jacks.
 <Li>The power supply section received a major redesign.
 <li>The round bridge diode is replaced with 4 discrete diodes.
-<Li>3 additional diodes are used to drop the voltage into the L7805 regulator
+<Li>3 additional diodes are used to drop the input voltage into the L7805 regulator
 <Li>A diode has been used to prevent backfeeding power onto the network cable 
-Substitute a jumper where feeding power out is the desired behaviour)
+(Substitute a jumper where feeding power out is the desired behaviour)
 <li>Screw terminals for a speaker are deleted. (Now using 2 pin headers)
 <Li>Remote power and RS485 coms tested via a standard network patch cable</Li>
 <Li><B>The full test suite has been run and all testing passed successfully.</B>
@@ -45,7 +46,7 @@ Substitute a jumper where feeding power out is the desired behaviour)
 <Li>This version is electrically the same as Version 1.3) however the 
 <Li>silkscreen errors have been addressed</Li>
 <Li><B>All functional testing passed successfully.</B></Li>
-<Li>Updated test sketches provided. Test code reflects new pin assignments,
+<Li>Updated test sketches provided. Test code reflects correct pin assignments,
 <Li>Sketches are simplified and compartmentalized as to their the test scope.
 
 ### Rev 1.3 and Older Have been removed from GitHub (Files are in the archive)
@@ -54,16 +55,16 @@ Substitute a jumper where feeding power out is the desired behaviour)
 The KiCad files are essentially 'source code' and include:
 <Li>the schematic and
 <Li>the Printed Circuit Board art work
-Te Kicad software checks for consistency between these two.
+The Kicad software checks for consistency between these two.
 
-The Gerber files can e thought of as the 'compiled version'. The Gerbers
+The Gerber files can be thought of as the 'compiled version'. The Gerbers
 are seperate files, one for each step in the manufacturing process of a PCB.
 The Gerbers are normally saved as a ZIP file and the Zip file is what gets
 submitted for manufacture at the fabrication facility of your choice.
 
 # The Panel Version
-The MaxDuino PCB is sized 50mmm x 100 mm which means it can easily be panelized
-in sets of two. This makes the panelized Maxduino fit on a single 100mm x 100mm 
+The MaxDuino PCB is sized 50 mm x 100 mm which means it can easily be panelized
+in sets of two. This makes the panelized Maxduino fit on a single 100 mm x 100 mm 
 PCB which is the normal 'minimum size' for billing. The short version of this 
 is you get twice as many MaxDuinos at no extra cost.
 
